@@ -14,9 +14,21 @@
 		9122F1982755C59400325880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9122F1972755C59400325880 /* Assets.xcassets */; };
 		9122F19B2755C59400325880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9122F1992755C59400325880 /* LaunchScreen.storyboard */; };
 		9122F1A32755C5F700325880 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1A22755C5F700325880 /* MyTableViewCell.swift */; };
-		9122F1A52755C71400325880 /* Zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = 9122F1A42755C71400325880 /* Zodiac.json */; };
-		9122F1AB2755C80000325880 /* ZodiacData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1AA2755C80000325880 /* ZodiacData.swift */; };
+		9122F1AB2755C80000325880 /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1AA2755C80000325880 /* CellData.swift */; };
 		9122F1AD2755C8D200325880 /* MyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1AC2755C8D200325880 /* MyCellViewModel.swift */; };
+		9180F1E1275A0A0200BC0352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1922755C59100325880 /* ViewController.swift */; };
+		9180F1E2275A0A0200BC0352 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1A22755C5F700325880 /* MyTableViewCell.swift */; };
+		9180F1E3275A0A0200BC0352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F18E2755C59100325880 /* AppDelegate.swift */; };
+		9180F1E5275A0A0200BC0352 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1902755C59100325880 /* SceneDelegate.swift */; };
+		9180F1E8275A0A0200BC0352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9122F1992755C59400325880 /* LaunchScreen.storyboard */; };
+		9180F1E9275A0A0200BC0352 /* WWDCAttendees.json in Resources */ = {isa = PBXBuildFile; fileRef = 9180F1D6275A007500BC0352 /* WWDCAttendees.json */; };
+		9180F1EA275A0A0200BC0352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9122F1972755C59400325880 /* Assets.xcassets */; };
+		9180F1EB275A0A0200BC0352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9122F1942755C59100325880 /* Main.storyboard */; };
+		9180F1F1275A0A2000BC0352 /* MyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180F1D9275A012B00BC0352 /* MyCellViewModel.swift */; };
+		9180F1F3275A0A4100BC0352 /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1AA2755C80000325880 /* CellData.swift */; };
+		9180F1F6275A0BF000BC0352 /* InterfaceCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180F1F5275A0BF000BC0352 /* InterfaceCellVM.swift */; };
+		9180F1F7275A0BF000BC0352 /* InterfaceCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180F1F5275A0BF000BC0352 /* InterfaceCellVM.swift */; };
+		9180F2B3275A203800BC0352 /* Zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = 9180F2B2275A202700BC0352 /* Zodiac.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +41,26 @@
 		9122F19A2755C59400325880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9122F19C2755C59400325880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9122F1A22755C5F700325880 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
-		9122F1A42755C71400325880 /* Zodiac.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Zodiac.json; path = "../../../../Downloads/Demo_023-main/Demo_023/Zodiac.json"; sourceTree = "<group>"; };
-		9122F1AA2755C80000325880 /* ZodiacData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacData.swift; sourceTree = "<group>"; };
+		9122F1AA2755C80000325880 /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 		9122F1AC2755C8D200325880 /* MyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellViewModel.swift; sourceTree = "<group>"; };
+		9180F1D5275A005900BC0352 /* TheSixth copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TheSixth copy-Info.plist"; path = "/Users/chunlicheng/Desktop/NewProject/TheSixth/TheSixth copy-Info.plist"; sourceTree = "<absolute>"; };
+		9180F1D6275A007500BC0352 /* WWDCAttendees.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WWDCAttendees.json; sourceTree = "<group>"; };
+		9180F1D9275A012B00BC0352 /* MyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellViewModel.swift; sourceTree = "<group>"; };
+		9180F1EF275A0A0200BC0352 /* TheSixth Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheSixth Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9180F1F0275A0A0200BC0352 /* TheSixth copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TheSixth copy2-Info.plist"; path = "/Users/chunlicheng/Desktop/NewProject/TheSixth/TheSixth copy2-Info.plist"; sourceTree = "<absolute>"; };
+		9180F1F5275A0BF000BC0352 /* InterfaceCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceCellVM.swift; sourceTree = "<group>"; };
+		9180F2B2275A202700BC0352 /* Zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Zodiac.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9122F1882755C59100325880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9180F1E6275A0A0200BC0352 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +75,8 @@
 			children = (
 				9122F18D2755C59100325880 /* TheSixth */,
 				9122F18C2755C59100325880 /* Products */,
+				9180F1D5275A005900BC0352 /* TheSixth copy-Info.plist */,
+				9180F1F0275A0A0200BC0352 /* TheSixth copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				9122F18B2755C59100325880 /* TheSixth.app */,
+				9180F1EF275A0A0200BC0352 /* TheSixth Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,11 +92,12 @@
 		9122F18D2755C59100325880 /* TheSixth */ = {
 			isa = PBXGroup;
 			children = (
+				9180F1D7275A008600BC0352 /* Protocol */,
 				9122F1A92755C7C200325880 /* Model */,
-				9122F1A82755C7B100325880 /* ViewModel */,
 				9122F1A72755C7A600325880 /* View */,
 				9122F1A62755C79000325880 /* Controller */,
-				9122F1A42755C71400325880 /* Zodiac.json */,
+				9122F1A82755C7B100325880 /* ViewModel_Origin */,
+				9180F1D8275A00C100BC0352 /* ViewModel_Dev */,
 				9122F18E2755C59100325880 /* AppDelegate.swift */,
 				9122F1902755C59100325880 /* SceneDelegate.swift */,
 				9122F1972755C59400325880 /* Assets.xcassets */,
@@ -95,20 +124,47 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		9122F1A82755C7B100325880 /* ViewModel */ = {
+		9122F1A82755C7B100325880 /* ViewModel_Origin */ = {
 			isa = PBXGroup;
 			children = (
 				9122F1AC2755C8D200325880 /* MyCellViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModel_Origin;
 			sourceTree = "<group>";
 		};
 		9122F1A92755C7C200325880 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9122F1AA2755C80000325880 /* ZodiacData.swift */,
+				9180F2B1275A201D00BC0352 /* Source */,
+				9122F1AA2755C80000325880 /* CellData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9180F1D7275A008600BC0352 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9180F1F5275A0BF000BC0352 /* InterfaceCellVM.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9180F1D8275A00C100BC0352 /* ViewModel_Dev */ = {
+			isa = PBXGroup;
+			children = (
+				9180F1D9275A012B00BC0352 /* MyCellViewModel.swift */,
+			);
+			name = ViewModel_Dev;
+			path = Controller/ViewModel_Dev;
+			sourceTree = "<group>";
+		};
+		9180F2B1275A201D00BC0352 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9180F2B2275A202700BC0352 /* Zodiac.json */,
+				9180F1D6275A007500BC0352 /* WWDCAttendees.json */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +185,23 @@
 			name = TheSixth;
 			productName = TheSixth;
 			productReference = 9122F18B2755C59100325880 /* TheSixth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9180F1DE275A0A0200BC0352 /* TheSixth Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9180F1EC275A0A0200BC0352 /* Build configuration list for PBXNativeTarget "TheSixth Dev" */;
+			buildPhases = (
+				9180F1DF275A0A0200BC0352 /* Sources */,
+				9180F1E6275A0A0200BC0352 /* Frameworks */,
+				9180F1E7275A0A0200BC0352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TheSixth Dev";
+			productName = TheSixth;
+			productReference = 9180F1EF275A0A0200BC0352 /* TheSixth Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,6 +233,7 @@
 			projectRoot = "";
 			targets = (
 				9122F18A2755C59100325880 /* TheSixth */,
+				9180F1DE275A0A0200BC0352 /* TheSixth Dev */,
 			);
 		};
 /* End PBXProject section */
@@ -170,9 +244,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9122F19B2755C59400325880 /* LaunchScreen.storyboard in Resources */,
-				9122F1A52755C71400325880 /* Zodiac.json in Resources */,
+				9180F2B3275A203800BC0352 /* Zodiac.json in Resources */,
 				9122F1982755C59400325880 /* Assets.xcassets in Resources */,
 				9122F1962755C59100325880 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9180F1E7275A0A0200BC0352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9180F1E8275A0A0200BC0352 /* LaunchScreen.storyboard in Resources */,
+				9180F1E9275A0A0200BC0352 /* WWDCAttendees.json in Resources */,
+				9180F1EA275A0A0200BC0352 /* Assets.xcassets in Resources */,
+				9180F1EB275A0A0200BC0352 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,8 +272,23 @@
 				9122F1932755C59100325880 /* ViewController.swift in Sources */,
 				9122F1A32755C5F700325880 /* MyTableViewCell.swift in Sources */,
 				9122F18F2755C59100325880 /* AppDelegate.swift in Sources */,
-				9122F1AB2755C80000325880 /* ZodiacData.swift in Sources */,
+				9122F1AB2755C80000325880 /* CellData.swift in Sources */,
 				9122F1912755C59100325880 /* SceneDelegate.swift in Sources */,
+				9180F1F6275A0BF000BC0352 /* InterfaceCellVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9180F1DF275A0A0200BC0352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9180F1F1275A0A2000BC0352 /* MyCellViewModel.swift in Sources */,
+				9180F1E1275A0A0200BC0352 /* ViewController.swift in Sources */,
+				9180F1E2275A0A0200BC0352 /* MyTableViewCell.swift in Sources */,
+				9180F1E3275A0A0200BC0352 /* AppDelegate.swift in Sources */,
+				9180F1E5275A0A0200BC0352 /* SceneDelegate.swift in Sources */,
+				9180F1F3275A0A4100BC0352 /* CellData.swift in Sources */,
+				9180F1F7275A0BF000BC0352 /* InterfaceCellVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +424,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -350,6 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DOrigin";
 				PRODUCT_BUNDLE_IDENTIFIER = individualStudio.TheSixth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -386,6 +488,65 @@
 			};
 			name = Release;
 		};
+		9180F1ED275A0A0200BC0352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VWDLUM96X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TheSixth copy2-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DDev";
+				PRODUCT_BUNDLE_IDENTIFIER = individualStudio.TheSixth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9180F1EE275A0A0200BC0352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VWDLUM96X8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TheSixth copy2-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = individualStudio.TheSixth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +564,15 @@
 			buildConfigurations = (
 				9122F1A02755C59400325880 /* Debug */,
 				9122F1A12755C59400325880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9180F1EC275A0A0200BC0352 /* Build configuration list for PBXNativeTarget "TheSixth Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9180F1ED275A0A0200BC0352 /* Debug */,
+				9180F1EE275A0A0200BC0352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

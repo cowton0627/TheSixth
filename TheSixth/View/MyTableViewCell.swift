@@ -8,8 +8,8 @@
 import UIKit
 
 class MyTableViewCell: UITableViewCell {
-    @IBOutlet weak var zodiac: UILabel!
-    @IBOutlet weak var tilDay: UILabel!
+    @IBOutlet weak var leadingLabel: UILabel!
+    @IBOutlet weak var trailingLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,12 +19,15 @@ class MyTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    // for OriginCell
     func setupCell(data: ZodiacData) {
-        zodiac.text = data.name
-        tilDay.text = data.tillDate
+        leadingLabel.text = data.name
+        trailingLabel.text = data.tillDate
     }
-    
-    
-    
+    // for DevCell
+    func setupCell(data: WwdcData) {
+        leadingLabel.text = data.name
+        trailingLabel.text = "\(data.age)"
+    }
 
 }

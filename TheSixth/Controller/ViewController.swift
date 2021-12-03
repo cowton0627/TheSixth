@@ -20,14 +20,16 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.zodiacs.count
+//        viewModel.zodiacs.count
+        viewModel.cellData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(MyTableViewCell.self)", for: indexPath) as? MyTableViewCell else {
             return UITableViewCell()
         }
-        cell.setupCell(data: viewModel.zodiacs[indexPath.row])
+//        cell.setupCell(data: viewModel.zodiacs[indexPath.row])
+        cell.setupCell(data: viewModel.cellData[indexPath.row])
         
         return cell
     }

@@ -6,9 +6,11 @@
 //
 
 import Foundation
-
-class MyCellViewModel {
-    var zodiacs = [ZodiacData]()
+// for Origin
+class MyCellViewModel: InterfaceCellVM {
+    var cellData = [ZodiacData]()
+    
+//    var zodiacs = [ZodiacData]()
     
     func fetchData() {
         guard let url = Bundle.main.url(forResource: "Zodiac", withExtension: "json") else {
@@ -20,7 +22,7 @@ class MyCellViewModel {
             let decoder = JSONDecoder()
             let data = try Data(contentsOf: url)
             let zodiacs = try decoder.decode([ZodiacData].self, from: data)
-            self.zodiacs = zodiacs
+            self.cellData = zodiacs
         }
         catch {
             print("Can't get JsonData from the url.")

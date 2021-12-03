@@ -42,15 +42,15 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="puL-t6-C34" firstAttribute="leading" secondItem="RD9-yq-2ks" secondAttribute="trailing" constant="245" id="PXM-lS-MEr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="puL-t6-C34" secondAttribute="trailing" constant="5" id="af0-H0-us1"/>
                                                 <constraint firstItem="puL-t6-C34" firstAttribute="centerY" secondItem="73d-Gy-8jZ" secondAttribute="centerY" id="iDI-vL-ETd"/>
                                                 <constraint firstItem="RD9-yq-2ks" firstAttribute="centerY" secondItem="73d-Gy-8jZ" secondAttribute="centerY" id="l0U-vw-x04"/>
                                                 <constraint firstItem="RD9-yq-2ks" firstAttribute="leading" secondItem="73d-Gy-8jZ" secondAttribute="leadingMargin" id="wDq-L6-mg3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="tilDay" destination="puL-t6-C34" id="oSk-q8-Bk9"/>
-                                            <outlet property="zodiac" destination="RD9-yq-2ks" id="iEN-38-KWa"/>
+                                            <outlet property="leadingLabel" destination="RD9-yq-2ks" id="iEN-38-KWa"/>
+                                            <outlet property="trailingLabel" destination="puL-t6-C34" id="oSk-q8-Bk9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

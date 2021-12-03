@@ -13,7 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        #if Origin
+            print("""
+
+            Hello, this is Oringin APP.
+
+            """)
+        #elseif Dev
+            print("""
+
+            Hello, this is Dev APP.
+
+            """)
+        #endif
+        
         return true
     }
 
