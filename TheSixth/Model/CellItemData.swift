@@ -1,5 +1,5 @@
 //
-//  CellData.swift
+//  CellItemData.swift
 //  TheSixth
 //
 //  Created by Chun-Li Cheng on 2021/11/30.
@@ -13,8 +13,9 @@ struct ZodiacData: Decodable {
     let fromDate: String
     let tillDate: String
 }
+
 // for Dev
-struct WwdcData: Decodable {
+struct AttendeeData: Decodable {
     let age: Int
     let badgeNumber: Int
     let isFirstTimeAttending: Bool

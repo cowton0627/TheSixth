@@ -8,32 +8,36 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var myTableView: UITableView!
-    private var viewModel = MyCellViewModel()
+    @IBOutlet weak var listTableView: UITableView!
+    private var listViewModel = ListCellViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.fetchData()
-        
+        listViewModel.fetchData()
     }
+    
 }
 
 extension ViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        viewModel.zodiacs.count
-        viewModel.cellData.count
+    
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
+//        listViewModel.cellItems.count
+        listViewModel.numberOfItems()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(MyTableViewCell.self)", for: indexPath) as? MyTableViewCell else {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(ListTableViewCell.self)", for: indexPath) as? ListTableViewCell else {
             return UITableViewCell()
         }
-//        cell.setupCell(data: viewModel.zodiacs[indexPath.row])
-        cell.setupCell(data: viewModel.cellData[indexPath.row])
+        let item = listViewModel.itemAt(indexPath.row)
+        cell.setupCell(with: item)
+//        cell.setupCell(data: listViewModel.cellItems[indexPath.row])
         
         return cell
     }
-    
     
 }
 
