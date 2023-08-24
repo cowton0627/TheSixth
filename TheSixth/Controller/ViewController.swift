@@ -9,13 +9,30 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var listTableView: UITableView!
+    @IBOutlet weak var switchDataBtn: UIButton!
     private var listViewModel = ListCellViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        #if Origin
+        listViewModel.fetchData(useAlternate: false)
+        listViewModel.cellItems.bind { _ in
+            self.listTableView.reloadData()
+        }
+        #elseif Dev
+        switchDataBtn.isEnabled = false
+        switchDataBtn.isHidden = true
         listViewModel.fetchData()
+        #endif
+        
     }
     
+    @IBAction func switchBtnTapped(_ sender: UIButton) {
+        #if Origin
+        listViewModel.switchData()
+        #endif
+    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -32,6 +49,7 @@ extension ViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(ListTableViewCell.self)", for: indexPath) as? ListTableViewCell else {
             return UITableViewCell()
         }
+        
         let item = listViewModel.itemAt(indexPath.row)
         cell.setupCell(with: item)
 //        cell.setupCell(data: listViewModel.cellItems[indexPath.row])

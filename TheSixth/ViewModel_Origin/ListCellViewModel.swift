@@ -8,11 +8,20 @@
 import Foundation
 // for Origin
 class ListCellViewModel: CellViewModelInterface {
-    var cellItems = [ZodiacData]()
+    
+//    var cellItems = [ZodiacData]()
+    var cellItems = Box([ZodiacData]())
+    
+    // to track which data set is being used
+    var isUsingAlternateData = false
+       
+    func fetchData() { }
+
+    func fetchData(useAlternate: Bool = false) {
         
-    func fetchData() {
+        let fileName = useAlternate ? "ZodiacAlternate" : "Zodiac"
         
-        guard let url = Bundle.main.url(forResource: "Zodiac", withExtension: "json") else {
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
             print("Can't find this url.")
             return
         }
@@ -22,23 +31,28 @@ class ListCellViewModel: CellViewModelInterface {
             let data = try Data(contentsOf: url)
             let zodiacs = try decoder.decode([ZodiacData].self,
                                              from: data)
-            self.cellItems = zodiacs
-            
+            self.cellItems.value = zodiacs
+//            self.cellItems = zodiacs
         } catch {
             print("Can't parse JsonData from the url.")
         }
         
+        isUsingAlternateData = useAlternate
+        
     }
     
     func numberOfItems() -> Int {
-        return cellItems.count
+        return cellItems.value.count
+//        return cellItems.count
     }
     
     func itemAt(_ index: Int) -> ZodiacData {
-        return cellItems[index]
+        return cellItems.value[index]
+//        return cellItems[index]
     }
     
-    
-    
+    func switchData() {
+        fetchData(useAlternate: !isUsingAlternateData)
+    }
     
 }
