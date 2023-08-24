@@ -50,8 +50,9 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        let item = listViewModel.itemAt(indexPath.row)
-        cell.setupCell(with: item)
+        cell.setupCell(with: listViewModel, at: indexPath.row)
+//        let item = listViewModel.itemAt(indexPath.row)
+//        cell.setupCell(with: item)
 //        cell.setupCell(data: listViewModel.cellItems[indexPath.row])
         
         return cell

@@ -23,6 +23,20 @@ class ListTableViewCell: UITableViewCell {
         leadingLabel.text = item.name
         trailingLabel.text = item.tillDate
     }
+    // Modify for OriginCell
+    func setupCell(with viewModel: ListCellViewModel, at index: Int) {
+        let item = viewModel.itemAt(index)
+        #if Origin
+        leadingLabel.text = item.name
+        trailingLabel.text = item.tillDate
+        #elseif Dev
+        leadingLabel.text = item.name
+        trailingLabel.text = "\(item.age)"
+        #endif
+//        leadingLabel.text = viewModel.cellItems.value[index].name
+//        leadingLabel.text = viewModel.cellItems.value[index].tillDate
+    }
+    
     // for DevCell
     func setupCell(with item: AttendeeData) {
         leadingLabel.text = item.name
