@@ -7,11 +7,6 @@
 		<key>TheSixth Dev.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>TheSixth copy.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
 		<key>TheSixth.xcscheme_^#shared#^_</key>
@@ -23,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>9122F18A2755C59100325880</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9126033A2A9C3763000229D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

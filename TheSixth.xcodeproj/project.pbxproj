@@ -19,6 +19,8 @@
 		912603352A973B00000229D9 /* CellItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1AA2755C80000325880 /* CellItemData.swift */; };
 		912603372A974229000229D9 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912603362A974229000229D9 /* Box.swift */; };
 		912603392A9749D7000229D9 /* ZodiacAlternate.json in Resources */ = {isa = PBXBuildFile; fileRef = 912603382A9745F5000229D9 /* ZodiacAlternate.json */; };
+		9126035C2A9C5001000229D9 /* TheSixth-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912603592A9C5001000229D9 /* TheSixth-info.plist */; };
+		9126035E2A9C500F000229D9 /* TheSixth Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912603582A9C5001000229D9 /* TheSixth Dev-Info.plist */; };
 		9180F1E1275A0A0200BC0352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1922755C59100325880 /* ViewController.swift */; };
 		9180F1E2275A0A0200BC0352 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1A22755C5F700325880 /* ListTableViewCell.swift */; };
 		9180F1E3275A0A0200BC0352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F18E2755C59100325880 /* AppDelegate.swift */; };
@@ -47,6 +49,8 @@
 		9122F1AC2755C8D200325880 /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
 		912603362A974229000229D9 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		912603382A9745F5000229D9 /* ZodiacAlternate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ZodiacAlternate.json; sourceTree = "<group>"; };
+		912603582A9C5001000229D9 /* TheSixth Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TheSixth Dev-Info.plist"; sourceTree = SOURCE_ROOT; };
+		912603592A9C5001000229D9 /* TheSixth-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TheSixth-info.plist"; sourceTree = SOURCE_ROOT; };
 		9180F1D6275A007500BC0352 /* WWDCAttendees.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WWDCAttendees.json; sourceTree = "<group>"; };
 		9180F1D9275A012B00BC0352 /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
 		9180F1EF275A0A0200BC0352 /* TheSixth Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheSixth Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +108,8 @@
 				9122F1972755C59400325880 /* Assets.xcassets */,
 				9122F1992755C59400325880 /* LaunchScreen.storyboard */,
 				9122F19C2755C59400325880 /* Info.plist */,
+				912603592A9C5001000229D9 /* TheSixth-info.plist */,
+				912603582A9C5001000229D9 /* TheSixth Dev-Info.plist */,
 			);
 			path = TheSixth;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				912603392A9749D7000229D9 /* ZodiacAlternate.json in Resources */,
+				9126035C2A9C5001000229D9 /* TheSixth-info.plist in Resources */,
 				9122F19B2755C59400325880 /* LaunchScreen.storyboard in Resources */,
 				9180F2B3275A203800BC0352 /* Zodiac.json in Resources */,
 				9122F1982755C59400325880 /* Assets.xcassets in Resources */,
@@ -266,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9180F1E8275A0A0200BC0352 /* LaunchScreen.storyboard in Resources */,
+				9126035E2A9C500F000229D9 /* TheSixth Dev-Info.plist in Resources */,
 				9180F1E9275A0A0200BC0352 /* WWDCAttendees.json in Resources */,
 				9180F1EA275A0A0200BC0352 /* Assets.xcassets in Resources */,
 				9180F1EB275A0A0200BC0352 /* Main.storyboard in Resources */,
@@ -509,7 +517,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VWDLUM96X8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TheSixth copy2-Info.plist";
+				INFOPLIST_FILE = "TheSixth Dev-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -539,7 +547,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VWDLUM96X8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TheSixth copy2-Info.plist";
+				INFOPLIST_FILE = "TheSixth Dev-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

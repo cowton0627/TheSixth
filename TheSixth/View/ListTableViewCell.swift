@@ -18,11 +18,6 @@ class ListTableViewCell: UITableViewCell {
 //        super.setSelected(selected, animated: animated)
 //    }
     
-    // for OriginCell
-    func setupCell(with item: ZodiacData) {
-        leadingLabel.text = item.name
-        trailingLabel.text = item.tillDate
-    }
     // Modify for OriginCell
     func setupCell(with viewModel: ListCellViewModel, at index: Int) {
         let item = viewModel.itemAt(index)
@@ -35,6 +30,12 @@ class ListTableViewCell: UITableViewCell {
         #endif
 //        leadingLabel.text = viewModel.cellItems.value[index].name
 //        leadingLabel.text = viewModel.cellItems.value[index].tillDate
+    }
+    
+    // for OriginCell
+    func setupCell(with item: ZodiacData) {
+        leadingLabel.text = item.name
+        trailingLabel.text = item.tillDate
     }
     
     // for DevCell
